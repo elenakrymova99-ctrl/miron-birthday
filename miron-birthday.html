@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="theme-color" content="#FFB5C5">
+<title>День рождения Мирона 🎈</title>
+<meta name="description" content="Приглашаем на день рождения Мирона: 24 октября 2026, 10:00, «ЛофтХа», набережная реки Смоленки, 35, корп. 1">
+
+<!-- Превью ссылки в мессенджерах. Чтобы появилась картинка, выложите её на хостинг
+     и добавьте: <meta property="og:image" content="https://ВАШ-САЙТ/preview.jpg">
+     (рекомендуемый размер 1200×630). То же для og:url. -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="День рождения Мирона 🎈">
+<meta property="og:description" content="24 октября 2026, 10:00 · «ЛофтХа», набережная реки Смоленки, 35, корп. 1. Не забудьте сменную обувь!">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎈</text></svg>">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background: #FFF5E4;
+    color: #4A3B5C;
+    line-height: 1.5;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  :root {
+    --bg: #FFF5E4;
+    --bg-alt: #FFEFD5;
+    --pink: #FFB5C5;
+    --pink-dark: #FF9AAE;
+    --accent: #C2325C;        /* тёмный розовый для текста и кнопок: контраст ≥ 4.5:1 */
+    --accent-light: #D63F6A;
+    --mint: #B5E8CC;
+    --peach: #FFD6A5;
+    --lavender: #C5B5E8;
+    --yellow: #FFE66D;
+    --text: #4A3B5C;
+    --text-light: #6F6082;
+    --shadow: 0 8px 24px rgba(74, 59, 92, 0.1);
+    --shadow-lg: 0 16px 40px rgba(74, 59, 92, 0.15);
+  }
+
+  a:focus-visible, button:focus-visible, .program-card:focus-visible {
+    outline: 3px solid #6B4FC0;
+    outline-offset: 3px;
+  }
+
+  /* ===== ОБЛОЖКА ===== */
+  .cover {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 60px 24px 40px;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(180deg, #FFE8EE 0%, #FFF5E4 60%, #FFEFD5 100%);
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -100px; left: -100px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(255,181,197,0.3), transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; right: -80px;
+    width: 280px; height: 280px;
+    background: radial-gradient(circle, rgba(181,232,204,0.3), transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .cover-content {
+    position: relative;
+    z-index: 2;
+    max-width: 420px;
+    width: 100%;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 24px;
+    animation: bob 3.5s ease-in-out infinite;
+    filter: drop-shadow(0 8px 16px rgba(74, 59, 92, 0.15));
+  }
+  @keyframes bob {
+    0%, 100% { transform: translateY(0) rotate(-2deg); }
+    50% { transform: translateY(-12px) rotate(2deg); }
+  }
+
+  .cover h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: var(--text);
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+  }
+  .subtitle {
+    font-size: 18px;
+    color: var(--text-light);
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+  .date {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 12px;
+    padding: 10px 24px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 50px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+  .place {
+    font-size: 16px;
+    color: var(--text);
+    font-weight: 600;
+    margin-bottom: 32px;
+    line-height: 1.4;
+  }
+  .place small {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-light);
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 16px 32px;
+    min-height: 48px;
+    background: linear-gradient(135deg, var(--accent-light), var(--accent));
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 20px rgba(194,50,92,0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-family: inherit;
+    line-height: 1.3;
+  }
+  .btn:active {
+    transform: scale(0.96);
+    box-shadow: 0 4px 12px rgba(194,50,92,0.25);
+  }
+  .btn-secondary {
+    background: white;
+    color: var(--accent);
+    border-color: var(--accent);
+    box-shadow: none;
+  }
+
+  /* ===== ШАРИКИ ===== */
+  .balloons {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .balloon {
+    position: absolute;
+    font-size: 40px;
+    animation: float 6s ease-in-out infinite;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+  }
+  .b1 { top: 12%; left: 8%; animation-delay: 0s; }
+  .b2 { top: 22%; right: 10%; animation-delay: 1.2s; font-size: 36px; }
+  .b3 { bottom: 22%; left: 12%; animation-delay: 2.4s; font-size: 44px; }
+  .b4 { top: 48%; right: 6%; animation-delay: 0.6s; font-size: 32px; }
+  .b5 { bottom: 32%; right: 18%; animation-delay: 1.8s; font-size: 38px; }
+  .b6 { top: 65%; left: 5%; animation-delay: 3s; font-size: 34px; }
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(-6deg); }
+    50% { transform: translateY(-22px) rotate(6deg); }
+  }
+
+  /* ===== СЕКЦИИ ===== */
+  section {
+    padding: 60px 20px;
+    position: relative;
+  }
+  section h2 {
+    font-size: 26px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 32px;
+    color: var(--text);
+    letter-spacing: -0.3px;
+  }
+
+  /* ===== ОТСЧЁТ ===== */
+  .countdown {
+    background: linear-gradient(180deg, #FFEFD5 0%, #FFF5E4 100%);
+  }
+  .counters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .counter-card {
+    background: white;
+    border-radius: 28px;
+    padding: 32px 24px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .counter-card::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 120px; height: 120px;
+    border-radius: 50%;
+    opacity: 0.15;
+    pointer-events: none;
+  }
+  .counter-card.sleeps { background: linear-gradient(135deg, #F3E5F5, #F8ECF9); }
+  .counter-card.sleeps::before { background: var(--lavender); }
+  .counter-card.kindergarten { background: linear-gradient(135deg, #E0F2F1, #ECF7F5); }
+  .counter-card.kindergarten::before { background: var(--mint); }
+  .counter-card.breakfasts { background: linear-gradient(135deg, #FFF3E0, #FFF7EB); }
+  .counter-card.breakfasts::before { background: var(--peach); }
+
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+  }
+  .counter-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .counter-value { font-variant-numeric: tabular-nums; }
+  .counter-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 6px;
+    margin-bottom: 16px;
+    font-size: 30px;
+    line-height: 1.15;
+    min-height: 34px;
+  }
+  .counter-icons span { display: inline-block; }
+  .counter-icons span.pop {
+    animation: pop 0.45s cubic-bezier(.34, 1.56, .64, 1) backwards;
+    animation-delay: var(--d, 0s);
+  }
+  @keyframes pop {
+    from { opacity: 0; transform: scale(0) rotate(-20deg); }
+    to   { opacity: 1; transform: none; }
+  }
+  .counter-subtitle {
+    font-size: 14px;
+    color: var(--text-light);
+    font-style: italic;
+    line-height: 1.4;
+  }
+
+  .party-banner {
+    background: linear-gradient(135deg, var(--pink), var(--peach));
+    border-radius: 28px;
+    padding: 40px 24px;
+    text-align: center;
+    color: var(--text);
+    box-shadow: var(--shadow-lg);
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  .party-banner h3 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  .party-banner p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+  }
+
+  /* ===== ПРОГРАММА ===== */
+  .program {
+    background: linear-gradient(180deg, #FFF5E4 0%, #FFE8EE 100%);
+  }
+  .program-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .program-card {
+    background: white;
+    border-radius: 22px;
+    padding: 18px 20px;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    user-select: none;
+  }
+  .program-card:active {
+    transform: scale(0.98);
+  }
+  .program-card.expanded {
+    background: linear-gradient(135deg, #FFF9EC, #FFF3DC);
+    box-shadow: var(--shadow-lg);
+  }
+  .program-time {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--accent);
+    min-width: 56px;
+    font-variant-numeric: tabular-nums;
+  }
+  .program-icon {
+    font-size: 32px;
+    flex-shrink: 0;
+  }
+  .program-info {
+    flex: 1;
+    min-width: 0;
+  }
+  .program-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text);
+    line-height: 1.3;
+  }
+  .program-desc {
+    font-size: 14px;
+    color: var(--text-light);
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: max-height 0.4s ease, margin-top 0.4s ease, opacity 0.4s ease, visibility 0.4s;
+    opacity: 0;
+    line-height: 1.4;
+  }
+  .program-card.expanded .program-desc {
+    max-height: 120px;
+    margin-top: 8px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .program-hint {
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-light);
+    margin-top: 16px;
+    font-style: italic;
+  }
+
+  /* ===== ГДЕ ===== */
+  .venue {
+    background: linear-gradient(180deg, #F3E5F5 0%, #E0F2F1 100%);
+    padding-bottom: 60px;
+  }
+  .venue-card {
+    background: white;
+    border-radius: 28px;
+    padding: 32px 24px;
+    box-shadow: var(--shadow);
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .venue-pin { font-size: 44px; margin-bottom: 8px; }
+  .venue-name {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.2;
+  }
+  .venue-address {
+    font-size: 17px;
+    color: var(--text);
+    margin: 6px 0 24px;
+    line-height: 1.4;
+  }
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .actions-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-light);
+    margin: 20px 0 -2px;
+  }
+  .rsvp-note {
+    font-size: 15px;
+    color: var(--text);
+    margin-bottom: 14px;
+  }
+  .divider {
+    border: 0;
+    height: 2px;
+    background: #F3E5F5;
+    margin: 24px 0;
+  }
+  [hidden] { display: none !important; }
+
+  /* ===== ВАЖНО ===== */
+  .important {
+    padding: 40px 20px 0;
+    background: linear-gradient(180deg, #FFE8EE 0%, #F3E5F5 100%);
+  }
+  .important-card {
+    background: linear-gradient(135deg, var(--mint), #D5F0E8);
+    border-radius: 28px;
+    padding: 36px 24px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .important-card .shoe {
+    font-size: 48px;
+    margin-bottom: 16px;
+    display: inline-block;
+    animation: wiggle 2s ease-in-out infinite;
+  }
+  .important-card p {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.3;
+  }
+
+  /* ===== ПОДАРКИ ===== */
+  .gifts {
+    padding: 0 20px 60px;
+    background: #E0F2F1;
+  }
+  .gift-card {
+    background: linear-gradient(135deg, #FFF3E0, var(--peach));
+    border-radius: 28px;
+    padding: 36px 24px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .gift-card .gift-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+    display: inline-block;
+    animation: wiggle 2.2s ease-in-out infinite;
+  }
+  .gift-card h3 {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .gift-card p {
+    font-size: 17px;
+    color: var(--text);
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+  .gift-card p.gift-lead { font-weight: 700; }
+  .gift-card .btn { margin-top: 10px; }
+
+  /* ===== ФИНАЛ ===== */
+  .finale {
+    min-height: 90vh;
+    min-height: 90dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 80px 20px;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(180deg, #E0F2F1 0%, #FFE8EE 50%, #FFD6E8 100%);
+  }
+  #confetti {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .finale-content {
+    position: relative;
+    z-index: 2;
+    max-width: 420px;
+  }
+  .finale-emoji {
+    font-size: 64px;
+    margin-bottom: 28px;
+    animation: bob 3s ease-in-out infinite;
+    letter-spacing: 8px;
+  }
+  .finale h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: var(--text);
+    line-height: 1.2;
+  }
+  .finale p {
+    font-size: 20px;
+    color: var(--text);
+    font-weight: 600;
+  }
+  .finale .heart {
+    display: inline-block;
+    color: var(--accent);
+    animation: heartbeat 1.5s ease-in-out infinite;
+  }
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.15); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.1); }
+  }
+
+  /* ===== ПОЯВЛЕНИЕ БЛОКОВ =====
+     Скрываем только если работает JS (класс .js на <html>).
+     Появление сделано через animation, а не transition, чтобы не ломать
+     собственные transition у карточек (нажатие, раскрытие). */
+  .js .reveal { opacity: 0; }
+  .js .reveal.visible {
+    opacity: 1;
+    animation: revealIn 0.8s ease backwards;
+    animation-delay: var(--d, 0s);
+  }
+  @keyframes revealIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: none; }
+  }
+  .counter-card.reveal:nth-child(1) { --d: 0.1s; }
+  .counter-card.reveal:nth-child(2) { --d: 0.25s; }
+  .counter-card.reveal:nth-child(3) { --d: 0.4s; }
+  .program-card.reveal:nth-child(1) { --d: 0.05s; }
+  .program-card.reveal:nth-child(2) { --d: 0.12s; }
+  .program-card.reveal:nth-child(3) { --d: 0.19s; }
+  .program-card.reveal:nth-child(4) { --d: 0.26s; }
+  .program-card.reveal:nth-child(5) { --d: 0.33s; }
+
+  @media (min-width: 480px) {
+    .cover h1 { font-size: 38px; }
+    section h2 { font-size: 30px; }
+    .counter-value { font-size: 72px; }
+    .finale h2 { font-size: 38px; }
+  }
+
+  /* ===== УМЕНЬШЕНИЕ ДВИЖЕНИЯ ===== */
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation: none !important;
+      transition-duration: 0.01ms !important;
+    }
+    .js .reveal { opacity: 1 !important; }
+    #confetti { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== ОБЛОЖКА ===== -->
+<section class="cover" id="cover">
+  <div class="balloons" aria-hidden="true">
+    <div class="balloon b1">🎈</div>
+    <div class="balloon b2">🎈</div>
+    <div class="balloon b3">🎈</div>
+    <div class="balloon b4">🎈</div>
+    <div class="balloon b5">🎈</div>
+    <div class="balloon b6">🎈</div>
+  </div>
+
+  <div class="cover-content">
+    <div class="avatar" aria-hidden="true">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <line x1="155" y1="95" x2="170" y2="40" stroke="#7A6B8C" stroke-width="1.5"/>
+        <ellipse cx="170" cy="30" rx="18" ry="22" fill="#FFB5C5"/>
+        <ellipse cx="164" cy="22" rx="5" ry="7" fill="#FFD6E0" opacity="0.7"/>
+        <path d="M 68 62 L 100 18 L 132 62 Z" fill="#C5B5E8"/>
+        <path d="M 68 62 L 100 18 L 132 62" stroke="#A89BD9" stroke-width="2" fill="none"/>
+        <circle cx="100" cy="18" r="7" fill="#FFE66D"/>
+        <circle cx="85" cy="45" r="3" fill="#FFE66D"/>
+        <circle cx="115" cy="45" r="3" fill="#FFB5C5"/>
+        <circle cx="100" cy="108" r="58" fill="#FFE0C4"/>
+        <path d="M 50 95 Q 55 65 100 58 Q 145 65 150 95 Q 140 80 100 78 Q 60 80 50 95 Z" fill="#8B5A3C"/>
+        <path d="M 60 85 Q 75 72 95 75" stroke="#6B4423" stroke-width="2" fill="none" opacity="0.5"/>
+        <circle cx="80" cy="108" r="6" fill="#4A3B5C"/>
+        <circle cx="120" cy="108" r="6" fill="#4A3B5C"/>
+        <circle cx="82" cy="106" r="2" fill="#fff"/>
+        <circle cx="122" cy="106" r="2" fill="#fff"/>
+        <circle cx="68" cy="125" r="9" fill="#FFB5C5" opacity="0.55"/>
+        <circle cx="132" cy="125" r="9" fill="#FFB5C5" opacity="0.55"/>
+        <path d="M 82 132 Q 100 148 118 132" stroke="#4A3B5C" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <path d="M 60 165 Q 100 155 140 165 L 145 200 L 55 200 Z" fill="#B5E8CC"/>
+        <circle cx="100" cy="175" r="4" fill="#FFE66D"/>
+      </svg>
+    </div>
+    <h1>🎈 День рождения Мирона</h1>
+    <p class="subtitle">Мы приготовили для вас настоящий праздник!</p>
+    <p class="date">24 октября в 10:00</p>
+    <p class="place">
+      📍 «ЛофтХа»
+      <small>наб. реки Смоленки, 35к1</small>
+    </p>
+    <a href="#countdown" class="btn">СМОТРЕТЬ ПРИГЛАШЕНИЕ ↓</a>
+  </div>
+</section>
+
+<!-- ===== ОТСЧЁТ ===== -->
+<section class="countdown" id="countdown">
+  <h2 class="reveal" id="countdown-title">🎈 До праздника осталось…</h2>
+  <div class="counters" id="counters">
+    <div class="counter-card sleeps reveal">
+      <div class="counter-title"><span class="counter-value" id="sleeps-value">—</span> <span id="sleeps-label">снов</span></div>
+      <div class="counter-icons" id="sleeps-icons" aria-hidden="true"></div>
+      <div class="counter-subtitle">Нужно много спать, чтобы были силы для праздника!</div>
+    </div>
+    <div class="counter-card kindergarten reveal">
+      <div class="counter-title"><span class="counter-value" id="kg-value">—</span> <span id="kg-label">походов в садик</span></div>
+      <div class="counter-icons" id="kg-icons" aria-hidden="true"></div>
+      <div class="counter-subtitle">Не забывай хорошее настроение!</div>
+    </div>
+    <div class="counter-card breakfasts reveal">
+      <div class="counter-title"><span class="counter-value" id="bf-value">—</span> <span id="bf-label">завтраков</span></div>
+      <div class="counter-icons" id="bf-icons" aria-hidden="true"></div>
+      <div class="counter-subtitle">Каждый завтрак приближает праздник!</div>
+    </div>
+  </div>
+</</section>
+
+<!-- ===== ПРОГРАММА ===== -->
+<section class="program" id="program">
+  <h2 class="reveal">Что нас ждёт?</h2>
+  <div class="program-cards">
+    <div class="program-card reveal">
+      <div class="program-time">10:00</div>
+      <div class="program-icon" aria-hidden="true">🕙</div>
+      <div class="program-info">
+        <div class="program-title">Встреча гостей</div>
+        <div class="program-desc">Собираемся вместе и начинаем веселье! 🎉</div>
+      </div>
+    </div>
+    <div class="program-card reveal">
+      <div class="program-time">10:30</div>
+      <div class="program-icon" aria-hidden="true">🪄</div>
+      <div class="program-info">
+        <div class="program-title">Фокусник со зверятами</div>
+        <div class="program-desc">Время милоты и фокусов ✨</div>
+      </div>
+    </div>
+    <div class="program-card reveal">
+      <div class="program-time">11:30</div>
+      <div class="program-icon" aria-hidden="true">🎪</div>
+      <div class="program-info">
+        <div class="program-title">Активная часть</div>
+        <div class="program-desc">Будем играть, танцевать и веселиться! 💃</div>
+      </div>
+    </div>
+    <div class="program-card reveal">
+      <div class="program-time">13:00</div>
+      <div class="program-icon" aria-hidden="true">🍰</div>
+      <div class="program-info">
+        <div class="program-title">Завершение праздника</div>
+        <div class="program-desc">Чтобы все успели на свой законный тихий час ❤️</div>
+      </div>
+    </div>
+  </div>
+  <p class="program-hint reveal">Нажмите на карточку, чтобы узнать подробнее 👆</p>
+</section>
+
+<!-- ===== ВАЖНО ===== -->
+<section class="important" id="important">
+  <div class="important-card reveal">
+    <div class="shoe" aria-hidden="true">👟</div>
+    <p>Не забудьте сменную обувь!</p>
+  </div>
+</section>
+
+<!-- ===== ГДЕ ===== -->
+<section class="venue" id="venue">
+  <h2 class="reveal">Где нас найти?</h2>
+  <div class="venue-card reveal">
+    <div class="venue-pin" aria-hidden="true">📍</div>
+    <div class="venue-name">«ЛофтХа»</div>
+    <div class="venue-address">набережная реки Смоленки, 35, корп. 1</div>
+
+    <div class="actions">
+      <a class="btn" id="map-yandex" target="_blank" rel="noopener">Открыть в Яндекс Картах</a>
+      <a class="btn btn-secondary" id="map-google" target="_blank" rel="noopener">Открыть в Google Картах</a>
+      <button class="btn btn-secondary" id="copy-address" type="button">Скопировать адрес</button>
+    </div>
+
+    <hr class="divider">
+
+    <div class="actions">
+      <p class="actions-title" style="margin:0 0 -2px">Добавить в календарь 📅</p>
+      <a class="btn btn-secondary" id="cal-google" target="_blank" rel="noopener">Google Календарь</a>
+      <button class="btn btn-secondary" id="cal-ics" type="button">Apple и другие (.ics)</button>
+    </div>
+
+    <!-- Блок подтверждения: показывается, только если в скрипте заполнено RSVP_URL -->
+    <div id="rsvp" hidden>
+      <hr class="divider">
+      <p class="rsvp-note" id="rsvp-note">Пожалуйста, подтвердите, что придёте.</p>
+      <div class="actions">
+        <a class="btn" id="rsvp-btn" target="_blank" rel="noopener">Подтвердить приход</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ПОДАРКИ ===== -->
+<section class="gifts" id="gifts">
+  <div class="gift-card reveal">
+    <div class="gift-icon" aria-hidden="true">🎁</div>
+    <h3>Идеи для подарков</h3>
+    <p class="gift-lead">Если хочется подарить что-то совсем своё — смело дарите!</p>
+    <p>Вишлист — это не инструкция, а просто маленькая подсказка, чтобы не ломать голову 😊</p>
+    <p>Главный подарок для нас — что вы придёте и разделите с нами этот день 🎈</p>
+    <a class="btn" href="https://followish.io/mywishlist/pywumz99keio31" target="_blank" rel="noopener">Открыть вишлист 🎁</a>
+  </div>
+</section>
+
+<!-- ===== ФИНАЛ ===== -->
+<section class="finale" id="finale">
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div class="finale-content">
+    <div class="finale-emoji" aria-hidden="true">🎈 🎂 🎈</div>
+    <h2 id="finale-title">На празднике ждем и детей, и взрослых!</h2>
+    <p id="finale-subtitle">24 октября 2026 <span class="heart">❤️</span></p>
+  </div>
+</section>
+
+<script>
+  /* ===================== НАСТРОЙКИ ===================== */
+  const PARTY_DATE   = new Date(2026, 9, 24);          // 24 октября 2026
+  const VENUE_NAME   = '«ЛофтХа»';
+  const VENUE_ADDR   = 'набережная реки Смоленки, 35, корп. 1';
+  const VENUE_CITY   = 'Санкт-Петербург';              // используется только в поиске на картах
+  // Время по Москве (UTC+3): 10:00–13:00 = 07:00–10:00 UTC
+  const EVENT_START_UTC = '20261024T070000Z';
+  const EVENT_END_UTC   = '20261024T100000Z';
+
+  // Подтверждение прихода. Вставьте ссылку, и блок появится на сайте.
+  // Примеры: 'https://wa.me/79991234567', 'https://t.me/username', 'tel:+79991234567'
+  const RSVP_URL      = '';
+  const RSVP_LABEL    = 'Подтвердить приход';
+  const RSVP_DEADLINE = '';  // например: '20 октября'
+  /* ===================================================== */
+
+  const $ = (id) => document.getElementById(id);
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- Даты и склонения ---------- */
+  function startOfDay(date) {
+    return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  }
+  function daysBetween(a, b) {
+    return Math.round((startOfDay(b) - startOfDay(a)) / (1000 * 60 * 60 * 24));
+  }
+  function plural(n, forms) {
+    const m10 = n % 10, m100 = n % 100;
+    if (m10 === 1 && m100 !== 11) return forms[0];
+    if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return forms[1];
+    return forms[2];
+  }
+  // 'before' — до праздника, 'today' — день праздника, 'after' — праздник прошёл
+  function partyStatus() {
+    const today = startOfDay(new Date()).getTime();
+    const party = startOfDay(PARTY_DATE).getTime();
+    if (today < party) return 'before';
+    if (today === party) return 'today';
+    return 'after';
+  }
+
+  /* ---------- Подсчёты ---------- */
+  function calculateSleeps() {
+    const now = new Date();
+    const daysUntilParty = daysBetween(now, PARTY_DATE);
+    let sleeps = daysUntilParty * 2;           // ночной сон + тихий час
+    if (now.getHours() >= 15) sleeps -= 1;     // сегодняшний тихий час уже прошёл
+    return Math.max(0, sleeps);
+  }
+  function calculateKindergarten() {
+    const today = startOfDay(new Date());
+    const current = new Date(today);
+    current.setDate(current.getDate() + 1);
+    const lastDay = new Date(2026, 9, 23);
+    let count = 0;
+    while (current.getTime() <= lastDay.getTime()) {
+      const dow = current.getDay();
+      if (dow !== 0 && dow !== 6) count++;
+      current.setDate(current.getDate() + 1);
+    }
+    return count;
+  }
+  function calculateBreakfasts() {
+    const today = startOfDay(new Date());
+    const tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    return Math.max(0, daysBetween(tomorrow, PARTY_DATE) + 1);
+  }
+
+  /* ---------- Счётчики ---------- */
+  // Рисует столько иконок, сколько осталось (😴 / 🎒 / 🥣)
+  function renderIcons(id, icon, n, animate) {
+    const box = $(id);
+    if (!box) return;
+    if (!animate && box.dataset.count === String(n)) return;
+    box.dataset.count = String(n);
+    box.textContent = '';
+    const step = n > 0 ? Math.min(0.05, 1.3 / n) : 0;
+    for (let i = 0; i < n; i++) {
+      const s = document.createElement('span');
+      s.textContent = icon;
+      if (animate && !reduceMotion) {
+        s.className = 'pop';
+        s.style.setProperty('--d', (i * step).toFixed(2) + 's');
+      }
+      box.appendChild(s);
+    }
+  }
+
+  function setCounter(valueId, labelId, iconsId, icon, target, forms, animate) {
+    const el = $(valueId);
+    const label = $(labelId);
+    if (!el || !label) return;
+    label.textContent = plural(target, forms);
+    renderIcons(iconsId, icon, target, animate);
+    const token = String(performance.now());
+    el.dataset.token = token;
+
+    if (!animate || reduceMotion) {
+      el.textContent = target;
+      return;
+    }
+    const duration = 1200;
+    const startTime = performance.now();
+    function update(now) {
+      if (el.dataset.token !== token) return; // запущена новая анимация
+      const progress = Math.min((now - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(target * eased);
+      if (progress < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+  }
+
+  let countersBannerShown = false;
+  function renderCounters(animate) {
+    const status = partyStatus();
+    const title = $('countdown-title');
+    const box = $('counters');
+
+    if (status !== 'before') {
+      if (countersBannerShown === status) return;
+      countersBannerShown = status;
+      if (status === 'today') {
+        title.textContent = '🎉 Сегодня праздник!';
+        box.innerHTML = `
+          <div class="party-banner">
+            <h3>🎉 СЕГОДНЯ ПРАЗДНИК!</h3>
+            <p>С днём рождения, Мирон! 🎂</p>
+          </div>`;
+      } else {
+        title.textContent = 'Праздник состоялся';
+        box.innerHTML = `
+          <div class="party-banner">
+            <h3>Спасибо, что были с нами! 💖</h3>
+            <p>Было очень весело 🎈</p>
+          </div>`;
+      }
+      return;
+    }
+
+    setCounter('sleeps-value', 'sleeps-label', 'sleeps-icons', '😴', calculateSleeps(), ['сон', 'сна', 'снов'], animate);
+    setCounter('kg-value', 'kg-label', 'kg-icons', '🎒', calculateKindergarten(), ['поход в садик', 'похода в садик', 'походов в садик'], animate);
+    setCounter('bf-value', 'bf-label', 'bf-icons', '🥣', calculateBreakfasts(), ['завтрак', 'завтрака', 'завтраков'], animate);
+  }
+
+  function updateFinale() {
+    const status = partyStatus();
+    if (status === 'today') {
+      $('finale-title').textContent = '🎉 СЕГОДНЯ ПРАЗДНИК!';
+      $('finale-subtitle').innerHTML = 'До встречи на дне рождения Мирона! <span class="heart">🎂</span>';
+    } else if (status === 'after') {
+      $('finale-title').textContent = 'Спасибо, что были с нами!';
+      $('finale-subtitle').innerHTML = 'День рождения Мирона 24 октября 2026 <span class="heart">❤️</span>';
+    }
+  }
+
+  /* ---------- Конфетти ---------- */
+  function setupConfetti() {
+    if (reduceMotion) return;
+    const finale = $('finale');
+    const canvas = $('confetti');
+    if (!canvas || !finale) return;
+    const ctx = canvas.getContext('2d');
+
+    let W = 0, H = 0;
+    function resize() {
+      const rect = canvas.getBoundingClientRect();
+      const dpr = window.devicePixelRatio || 1;
+      W = rect.width;
+      H = rect.height;
+      canvas.width = Math.round(W * dpr);
+      canvas.height = Math.round(H * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    const colors = ['#FFB5C5', '#B5E8CC', '#FFD6A5', '#C5B5E8', '#FFE66D', '#FF9AA2', '#FFD6E8'];
+    const particles = [];
+    for (let i = 0; i < 70; i++) {
+      particles.push({
+        x: Math.random() * W,
+        y: Math.random() * -H,
+        w: 5 + Math.random() * 6,
+        h: 9 + Math.random() * 8,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        speed: 1.2 + Math.random() * 2,
+        angle: Math.random() * Math.PI * 2,
+        spin: (Math.random() - 0.5) * 0.12,
+        drift: (Math.random() - 0.5) * 0.6,
+        delay: Math.random() * 2000
+      });
+    }
+
+    let running = false;
+    let raf = 0;
+    let startTime = 0;
+
+    function draw(now) {
+      if (!running) { raf = 0; return; }       // блок вне экрана — цикл останавливается
+      ctx.clearRect(0, 0, W, H);
+      const elapsed = now - startTime;
+
+      particles.forEach(p => {
+        if (elapsed < p.delay) return;
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.angle);
+        ctx.fillStyle = p.color;
+        ctx.globalAlpha = 0.85;
+        ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+        ctx.restore();
+
+        p.y += p.speed;
+        p.x += p.drift;
+        p.angle += p.spin;
+
+        if (p.y > H + 20) {
+          p.y = -20;
+          p.x = Math.random() * W;
+        }
+      });
+      raf = requestAnimationFrame(draw);
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        running = entry.isIntersecting;
+        if (running && !raf) {
+          if (!startTime) startTime = performance.now();
+          raf = requestAnimationFrame(draw);
+        }
+      });
+    }, { threshold: 0.1 });
+    observer.observe(finale);
+  }
+
+  /* ---------- Появление блоков ---------- */
+  function setupReveal() {
+    const items = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      items.forEach(el => el.classList.add('visible'));
+      return;
+    }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    items.forEach(el => observer.observe(el));
+  }
+
+  // Анимация чисел — когда блок со счётчиками появился на экране
+  function setupCountersAnimation() {
+    const box = $('counters');
+    if (!box || !('IntersectionObserver' in window)) return;
+    const observer = new IntersectionObserver((entries) => {
+      if (entries.some(e => e.isIntersecting)) {
+        renderCounters(true);
+        observer.disconnect();
+      }
+    }, { threshold: 0.2 });
+    observer.observe(box);
+  }
+
+  /* ---------- Карточки программы (доступны с клавиатуры) ---------- */
+  function setupProgramCards() {
+    document.querySelectorAll('.program-card').forEach(card => {
+      card.setAttribute('role', 'button');
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('aria-expanded', 'false');
+      const toggle = () => {
+        const open = card.classList.toggle('expanded');
+        card.setAttribute('aria-expanded', String(open));
+      };
+      card.addEventListener('click', toggle);
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggle();
+        }
+      });
+    });
+  }
+
+  /* ---------- Адрес, карты, календарь, подтверждение ---------- */
+  function setupVenue() {
+    const query = `${VENUE_NAME.replace(/[«»]/g, '')} ${VENUE_ADDR} ${VENUE_CITY}`;
+    $('map-yandex').href = 'https://yandex.ru/maps/?text=' + encodeURIComponent(query);
+    $('map-google').href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(query);
+
+    const fullAddress = `${VENUE_NAME}, ${VENUE_ADDR}`;
+    const copyBtn = $('copy-address');
+    const copyLabel = copyBtn.textContent;
+    copyBtn.addEventListener('click', async () => {
+      let ok = false;
+      try {
+        await navigator.clipboard.writeText(fullAddress);
+        ok = true;
+      } catch (e) {
+        const ta = document.createElement('textarea');
+        ta.value = fullAddress;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { ok = document.execCommand('copy'); } catch (e2) { ok = false; }
+        document.body.removeChild(ta);
+      }
+      copyBtn.textContent = ok ? 'Адрес скопирован ✓' : 'Не удалось скопировать';
+      setTimeout(() => { copyBtn.textContent = copyLabel; }, 2200);
+    });
+
+    const title = 'День рождения Мирона 🎈';
+    const location = `${VENUE_NAME}, ${VENUE_ADDR}, ${VENUE_CITY}`;
+    const details = 'Не забудьте сменную обувь!';
+
+    $('cal-google').href = 'https://calendar.google.com/calendar/render?action=TEMPLATE'
+      + '&text=' + encodeURIComponent(title)
+      + '&dates=' + EVENT_START_UTC + '/' + EVENT_END_UTC
+      + '&location=' + encodeURIComponent(location)
+      + '&details=' + encodeURIComponent(details);
+
+    $('cal-ics').addEventListener('click', () => {
+      const esc = (s) => s.replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\n/g, '\\n');
+      const stamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+      const ics = [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'PRODID:-//Miron Birthday//RU',
+        'CALSCALE:GREGORIAN',
+        'BEGIN:VEVENT',
+        'UID:miron-birthday-20261024@invite',
+        'DTSTAMP:' + stamp,
+        'DTSTART:' + EVENT_START_UTC,
+        'DTEND:' + EVENT_END_UTC,
+        'SUMMARY:' + esc(title),
+        'LOCATION:' + esc(location),
+        'DESCRIPTION:' + esc(details),
+        'BEGIN:VALARM',
+        'TRIGGER:-P1D',
+        'ACTION:DISPLAY',
+        'DESCRIPTION:' + esc('Завтра день рождения Мирона'),
+        'END:VALARM',
+        'END:VEVENT',
+        'END:VCALENDAR'
+      ].join('\r\n');
+
+      const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'miron-birthday.ics';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 2000);
+    });
+
+    if (RSVP_URL) {
+      $('rsvp').hidden = false;
+      $('rsvp-btn').href = RSVP_URL;
+      $('rsvp-btn').textContent = RSVP_LABEL;
+      if (RSVP_DEADLINE) {
+        $('rsvp-note').textContent = `Пожалуйста, подтвердите приход до ${RSVP_DEADLINE}.`;
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    renderCounters(false);   // сразу ставим актуальные значения
+    updateFinale();
+    setupReveal();
+    setupCountersAnimation();
+    setupConfetti();
+    setupProgramCards();
+    setupVenue();
+    setInterval(() => { renderCounters(false); updateFinale(); }, 60 * 1000);
+  });
+</script>
+
+</body>
+</html>
